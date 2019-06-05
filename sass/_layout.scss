@@ -7,14 +7,17 @@
 }
 
 .header {
+  font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
   border-bottom: var(--color-gray-light-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .content {
-  display: flex;
-  
+
 }
 
 .sidebar {
