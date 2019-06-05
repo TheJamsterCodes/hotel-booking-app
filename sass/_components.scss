@@ -116,3 +116,32 @@
 
   }
 }
+
+// Sidebar
+.side-nav {
+  list-style: none;
+
+  &__item {
+
+  }
+
+  &__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+
+  }
+
+  &__link {
+
+
+  }
+
+}
+
+// Legal
+.legal {
+  font-size: 1.2rem;
+  color: var(--color-gray-light-4);
+  text-align: center;
+  padding: 2.5rem;
+}
