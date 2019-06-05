@@ -122,13 +122,26 @@
   list-style: none;
   font-size: 1.4rem;
   margin-top: 3.5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: flex;
+    margin: 0;
+  }
   
   &__item {
     position: relative;
 
     &:not(:last-child) {
       margin-bottom: .5rem;
-    }  
+
+      @media only screen and (max-width: $bp-medium) {
+        margin: 0;
+      }         
+    }
+    
+    @media only screen and (max-width: $bp-medium) {
+      flex: 1;
+    }    
   }
 
   &__item::before {
@@ -165,6 +178,11 @@
     z-index: 10;
     display: flex;
     align-items: center; 
+
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+      padding: 2rem;
+    }       
   }
 
   &__icon {
@@ -182,6 +200,10 @@
   color: var(--color-gray-light-4);
   text-align: center;
   padding: 2.5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }  
 }
 
 // Gallery
@@ -358,6 +380,7 @@
   }
 
   &__friends {
+    display: flex;
   }
 
   &__photo {
@@ -368,7 +391,7 @@
     border: 3px solid #fff;
 
     &:not(:last-child) {
-      margin-right: -1.5rem;
+      margin-right: -2rem;
     }
   }
 }
@@ -381,6 +404,11 @@
   margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 2rem;
+      margin-bottom: 3rem;
+    }     
 
   &__text {
     padding-bottom: 2rem;
@@ -440,6 +468,10 @@
 .cta {
   padding: 3.5rem;
   text-align: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 2.5rem 0;
+    }     
 
   &__book-now {
     font-size: 1.2rem;
